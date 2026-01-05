@@ -1,124 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goa Game App Download – Color Prediction Game</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goa Game App Download – Color Prediction Game</title>
 
-        /* Banner Section */
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f6f8;
+        color: #333;
+        line-height: 1.7;
+    }
+
+    /* ================= Banner ================= */
+    .banner {
+        position: relative;
+        height: 460px;
+        background: url("man-wearing-vr-glasses-gaming.jpg") center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.6);
+    }
+
+    .banner-content {
+        position: relative;
+        text-align: center;
+        color: #fff;
+        max-width: 800px;
+        padding: 20px;
+        z-index: 1;
+    }
+
+    .banner-content h1 {
+        font-size: 42px;
+        margin-bottom: 10px;
+        color: #ffb300;
+    }
+
+    .banner-content p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .cta {
+        display: inline-block;
+        padding: 14px 34px;
+        background: linear-gradient(45deg, #ff5722, #ff9800);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cta:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    /* ================= Sections ================= */
+    section {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 35px;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+        color: #ff5722;
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+
+    h3 {
+        margin-top: 25px;
+        color: #ff5722;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+    }
+
+    .faq-item {
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    /* ================= Footer ================= */
+    footer {
+        background: #1c1c1c;
+        color: #fff;
+        text-align: center;
+        padding: 25px 10px;
+        margin-top: 60px;
+        font-size: 14px;
+    }
+
+    /* ================= Responsive ================= */
+    @media (max-width: 768px) {
         .banner {
-            position: relative;
-            text-align: center;
-            color: #fff;
-        }
-
-        .banner img {
-            width: 100%;
-            height: 420px;
-            object-fit: cover;
-        }
-
-        .banner-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: rgba(0, 0, 0, 0.6);
-            padding: 25px;
-            border-radius: 10px;
-            max-width: 90%;
+            height: 360px;
         }
 
         .banner-content h1 {
-            margin: 0 0 10px;
-            color: #ff9800;
-        }
-
-        .banner-content p {
-            margin-bottom: 15px;
+            font-size: 30px;
         }
 
         section {
-            max-width: 1100px;
-            margin: 30px auto;
-            padding: 20px;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            margin: 20px 15px;
+            padding: 25px;
         }
-
-        h2, h3 {
-            color: #ff5722;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        ul li {
-            margin-bottom: 8px;
-        }
-
-        .cta {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 12px 25px;
-            background: #ff5722;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        .cta:hover {
-            background: #e64a19;
-        }
-
-        .faq-item {
-            margin-bottom: 15px;
-        }
-
-        footer {
-            background: #222;
-            color: #fff;
-            text-align: center;
-            padding: 20px 10px;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 768px) {
-            .banner img {
-                height: 300px;
-            }
-
-            section {
-                margin: 15px;
-            }
-        }
-    </style>
+    }
+</style>
 </head>
+
 <body>
 
-<!-- Banner Section -->
+<!-- Banner -->
 <div class="banner">
     <div class="banner-content">
         <h1>Goa Game App Download</h1>
         <p>Play Color Prediction Games Anytime, Anywhere</p>
-            <img src="man-wearing-vr-glasses-gaming.jpg" alt="Goa Game App Download Banner">
-
         <a href="https://goagamee.org" class="cta">Download App</a>
     </div>
 </div>
 
-<!-- Home Page Content -->
+<!-- Home -->
 <section>
     <h2>Welcome to Goa Game App Download</h2>
     <p>
@@ -144,7 +172,7 @@
     <a href="https://goagamee.org" class="cta">Download Goa Game App</a>
 </section>
 
-<!-- Features Page Content -->
+<!-- Features -->
 <section>
     <h2>Key Features of Goa Game App Download</h2>
     <ul>
@@ -157,7 +185,7 @@
     </ul>
 </section>
 
-<!-- Game Page Content -->
+<!-- Game -->
 <section>
     <h2>Color Prediction Game – Goa Game App</h2>
     <p>
@@ -174,7 +202,7 @@
     </ul>
 </section>
 
-<!-- About Page Content -->
+<!-- About -->
 <section>
     <h2>About Goa Game App Download</h2>
     <p>
@@ -191,7 +219,7 @@
     </ul>
 </section>
 
-<!-- FAQ Page Content -->
+<!-- FAQ -->
 <section>
     <h2>Frequently Asked Questions</h2>
 
@@ -221,13 +249,12 @@
     </div>
 </section>
 
-<!-- Contact Page Content -->
+<!-- Contact -->
 <section>
     <h2>Contact Goa Game App Download</h2>
     <p>
         If you have questions about <strong>Goa Game App Download</strong>, gameplay, or technical support, we’re here to help.
     </p>
-
     <ul>
         <li>Customer Support Team</li>
         <li>Email Assistance</li>
