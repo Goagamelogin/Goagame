@@ -13,11 +13,37 @@
             line-height: 1.6;
         }
 
-        header {
-            background: linear-gradient(90deg, #ff9800, #ff5722);
-            color: #fff;
-            padding: 30px 15px;
+        /* Banner Section */
+        .banner {
+            position: relative;
             text-align: center;
+            color: #fff;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+        }
+
+        .banner-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.6);
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 90%;
+        }
+
+        .banner-content h1 {
+            margin: 0 0 10px;
+            color: #ff9800;
+        }
+
+        .banner-content p {
+            margin-bottom: 15px;
         }
 
         section {
@@ -29,7 +55,7 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.05);
         }
 
-        h1, h2, h3 {
+        h2, h3 {
             color: #ff5722;
         }
 
@@ -43,7 +69,7 @@
 
         .cta {
             display: inline-block;
-            margin-top: 15px;
+            margin-top: 10px;
             padding: 12px 25px;
             background: #ff5722;
             color: #fff;
@@ -69,6 +95,10 @@
         }
 
         @media (max-width: 768px) {
+            .banner img {
+                height: 300px;
+            }
+
             section {
                 margin: 15px;
             }
@@ -77,10 +107,16 @@
 </head>
 <body>
 
-<header>
-    <h1>Goa Game App Download – Play Color Prediction Games Anytime</h1>
-    <p>Fast • Secure • Entertaining Color Prediction Gaming</p>
-</header>
+<!-- Banner Section -->
+<div class="banner">
+    <div class="banner-content">
+        <h1>Goa Game App Download</h1>
+        <p>Play Color Prediction Games Anytime, Anywhere</p>
+            <img src="man-wearing-vr-glasses-gaming.jpg" alt="Goa Game App Download Banner">
+
+        <a href="https://goagamee.org" class="cta">Download App</a>
+    </div>
+</div>
 
 <!-- Home Page Content -->
 <section>
@@ -105,17 +141,12 @@
         <li>Fair and transparent game system</li>
     </ul>
 
-    <a href="#" class="cta">Download the App Now</a>
+    <a href="https://goagamee.org" class="cta">Download Goa Game App</a>
 </section>
 
 <!-- Features Page Content -->
 <section>
     <h2>Key Features of Goa Game App Download</h2>
-    <p>
-        The <strong>Goa Game App Download</strong> platform is built with advanced features to enhance your color prediction
-        gaming experience.
-    </p>
-
     <ul>
         <li><strong>Quick Download & Install:</strong> Simple steps to download the Goa game app</li>
         <li><strong>Color Prediction Gameplay:</strong> Easy-to-understand color-based games</li>
@@ -124,8 +155,6 @@
         <li><strong>Secure System:</strong> Encrypted data and safe user access</li>
         <li><strong>24/7 Accessibility:</strong> Play anytime on supported devices</li>
     </ul>
-
-    <p>Our features ensure a seamless and enjoyable gaming experience for every player.</p>
 </section>
 
 <!-- Game Page Content -->
@@ -143,11 +172,6 @@
         <li>Wait for the result</li>
         <li>Enjoy quick outcomes and smooth gameplay</li>
     </ul>
-
-    <p>
-        The Goa game app download offers a transparent system with real-time updates, making the color prediction game both
-        exciting and easy to play.
-    </p>
 </section>
 
 <!-- About Page Content -->
@@ -159,17 +183,12 @@
         technology and responsible gaming practices.
     </p>
 
-    <h3>We Focus On</h3>
     <ul>
         <li>User satisfaction</li>
         <li>Fair gameplay systems</li>
         <li>Platform security</li>
         <li>Continuous improvement</li>
     </ul>
-
-    <p>
-        Our team works constantly to enhance performance and maintain trust among users.
-    </p>
 </section>
 
 <!-- FAQ Page Content -->
@@ -214,10 +233,6 @@
         <li>Email Assistance</li>
         <li>In-App Support</li>
     </ul>
-
-    <p>
-        Our support team is available to ensure you have a smooth and enjoyable experience on the Goa game app.
-    </p>
 </section>
 
 <footer>
